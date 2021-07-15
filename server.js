@@ -1,17 +1,17 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import connectDB from './config/db.js'
+import connectDB from './config/connect.js'
 import path from 'path';
 import cors from 'cors';
 import colors from 'colors'
-import routes from './routes';
-import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import routes from './routes/index.js';
+
 
 const PORT = process.env.PORT || 5000;
 
 dotenv.config()
 connectDB()
-
+console.log(process.env.MONGO_URI)
 const app = express();
 app.use(express.json())
 app.use(cors());
@@ -24,7 +24,4 @@ app.get('/', (req, res) => {
 
 
 
-app.use(notFound)
-app.use(errorHandler)
-
-app.listen(PORT, console.log(`server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold));
+app.listen(PORT, console.log(`server running on port ${PORT}`.yellow.bold));
