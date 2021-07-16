@@ -18,9 +18,7 @@ app.use(cors());
 
 app.use('/api', routes);
 
-app.get('/', (req, res) => {
-  res.send('api is running...');
-})
+ 
 
 if(process.env.NODE_ENV==='production'){
   app.use(express.static(path.resolve(__dirname, './client/build')))
