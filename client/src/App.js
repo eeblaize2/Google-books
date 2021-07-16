@@ -7,7 +7,7 @@ import Search from './screens/Search';
 
 function App() {
   return (
-    <Router>
+    <Router className= 'container'>
       <Header />
       <div className="App">
         <Route path="/" component= {Search} exact /> 

@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 const Search = () => {
-    const [searchTerm, setSearchTerm] = useState('Little Women')
+    const [searchTerm, setSearchTerm] = useState('')
     const [results, setResults] = useState([])
     const handleSubmit = (event) =>{
         event.preventDefault()
@@ -31,11 +31,11 @@ const Search = () => {
         console.log(book)
         axios.post('http://localhost:5000/api/books', book)
         .then(data =>{
-            console.log(data, '=================')
         })
     }
     return (
-        <div>
+        <div className= 'content'>
+            <div className= 'Hero'></div>
             <SearchBar searchTerm= {searchTerm} setSearchTerm= {setSearchTerm} handleSubmit= {handleSubmit}/>
             {results.map(book =>(
                 <BookCard book= {book} buttonText= 'Save' buttonFunction= {handleSave}/>

@@ -27,7 +27,8 @@ const Saved = () => {
         })
     }
     return (
-        <div className= 'bg-black-100'>
+        <div className= 'content'>
+            <div className= 'Hero'></div>
            {results.map(book =>(
                 <BookCard book= {book} buttonText= 'Delete' buttonFunction= {handleDelete}/>
             ))}

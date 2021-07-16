@@ -10,5 +10,47 @@
 }
 .book-bottom{
   display: flex;
-  
+
+}
+.book-bottom > img{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.book-bottom > p{
+  margin-top: 10px;
+}
+.book-buttons > a{
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: darkolivegreen;
+  color: white;
+  margin-right: 5px;
+}
+.book-buttons > button{
+  padding: 5px 10px;
+  border: 1px solid black;
+  background-color: darkolivegreen;
+  color: white;
+}
+.Hero{
+  height: 300px;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 20px 0;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.content{
+  width: 95%;
+}
+form {
+  margin-bottom: 20px;
 }
