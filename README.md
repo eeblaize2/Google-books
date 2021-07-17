@@ -1,29 +1,51 @@
-# MERN + Redux App Template
+# Google Books
+An app that allows the user to search for books utilizing the Google books API.
 
-## Description
-This is free to use for anyone needing to build a full-stack MERN app with Redux for state management on the frontend. It comes with a User model pre-loaded, as well as auth and error middleware functions. It uses jsonwebtokens to authenticate the user. You need to decide how you want to store the token on the frontend. 
 
-You'll need to have a MongoDB Atlas account, with a database created.
 
-The client folder was initialized using create-react-app. React-router is set up in App.js and ready to add your routes to.
 
-## Installation Instructions
+I## Table of contents
+* [Project's-aim](#project's-aim)
+* [How-to-use](#how-to-use)
+* [Link-to-deployed-application](#link-to-deployed-application)
+* [Technologies](#technologies)
+* [Contributors](#contributors)
+* [Screenshot-to-deployed-application](#screenshot-to-deployed-application)
 
-Clone the repo to your machine.
 
-Navigate into the cloned project:
-```bash
-cd mern-redux-template
-```
-Update the remote origin to your own blank repo:
-```bash
-git remote set-url origin new.git.url/here
-```
-Install dependences in both root level and client folder:
-```bash
-npm install
-cd client && npm install
-```
-Create a .env file in the root level, using example.env as a model. Add in your MongoDB Atlas connection string to your database
 
-If you won't have users in your database, you may delete the userModel file in the models folder, and the authMiddleware in the middleware folder.
+## Project's aim
+Build an app that will allow the user to search for books and view saved books, utilizing the Google Books API.
+
+## How to use
+1) Visit deployed link
+2) Enter book you want to search for in the search bar
+3) Click on the book you want in the search results
+4) Either navigate to the book page via Google Books or 
+5) Save your search for later viewing
+6) View saved books page and view book or delete saved books
+
+
+## Link to deployed application:
+[E-Commerce](https://eeblaize2.github.io/E-Commerce/)
+
+
+## Technologies
+Project is created with:
+* HTML 
+* CSS 
+* vanilla js/jQuery 
+* tailwind 
+* Google Books API
+* React
+* MongoDB
+
+
+
+
+## Contributors:
+* [Erin](https://github.com/eeblaize2)
+
+
+## Screenshot to deployed application
+![E-Commerce](https://user-images.githubusercontent.com/77705971/125383708-ae867880-e34c-11eb-94d8-2a1e5cbc2ac8.PNG)
