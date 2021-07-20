@@ -7,7 +7,7 @@ const Saved = () => {
     const [deleteSuccess, setDeleteSuccess]= useState(false)
 
     useEffect(()=>{
-        fetch('http://localhost:5000/api/books')
+        fetch('/api/books')
         .then(response => response.json())
         .then(data =>{
             console.log(data)
