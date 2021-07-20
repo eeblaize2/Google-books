@@ -9,7 +9,7 @@ const Search = () => {
     const [results, setResults] = useState([])
     const handleSubmit = (event) =>{
         event.preventDefault()
-       axios.post('http://localhost:5000/search', {searchTerm}) 
+       axios.post('/search', {searchTerm}) 
        .then(response =>{
            console.log(response.data)
            setResults(response.data)
@@ -19,7 +19,7 @@ const Search = () => {
     }
     const handleSave = (book)=>{
         console.log(book)
-        axios.post('http://localhost:5000/api/books', book)
+        axios.post('/api/books', book)
         .then(data =>{
         })
     }

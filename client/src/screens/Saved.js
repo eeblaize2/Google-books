@@ -20,7 +20,7 @@ const Saved = () => {
 
    
     const handleDelete = (book)=>{
-        axios.delete(`http://localhost:5000/api/books/${book._id}`)
+        axios.delete(`/api/books/${book._id}`)
         .then(data =>{
             console.log(data)
             setDeleteSuccess(true)
