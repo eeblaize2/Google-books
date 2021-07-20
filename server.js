@@ -1,6 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import connectDB from './config/connect.js'
+import mongoose from 'mongoose'
 import path from 'path';
 import cors from 'cors';
 import colors from 'colors'
@@ -11,8 +11,15 @@ import axios from 'axios'
 const PORT = process.env.PORT || 5000;
 
 dotenv.config()
-connectDB()
-console.log(process.env.MONGO_URI)
+mongoose.connect(
+  process.env.MONGODB_URI,
+  {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false,
+  },
+);
 const app = express();
 app.use(express.json())
 app.use(cors());

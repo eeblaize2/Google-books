@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+
 
 /*const connectDB = async () => {
   try {
@@ -14,14 +14,4 @@ import mongoose from 'mongoose'
   }
 }*/
 
-export default connectDB;
 
-mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb: //localhost/stormy-hamlet',
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindAndModify: false,
-    },
-);
