@@ -27,7 +27,7 @@ Build an app that will allow the user to search for books and view saved books, 
 
 
 ## Link to deployed application:
-[E-Commerce](https://eeblaize2.github.io/E-Commerce/)
+[Google Books](https://google-books-home.herokuapp.com/)
 
 
 ## Technologies
@@ -35,7 +35,6 @@ Project is created with:
 * HTML 
 * CSS 
 * vanilla js/jQuery 
-* tailwind 
 * Google Books API
 * React
 * MongoDB
@@ -48,4 +47,5 @@ Project is created with:
 
 
 ## Screenshot to deployed application
-![E-Commerce](https://user-images.githubusercontent.com/77705971/125383708-ae867880-e34c-11eb-94d8-2a1e5cbc2ac8.PNG)
+![google_books](https://user-images.githubusercontent.com/77705971/126436801-978a4d7c-4a84-4416-98f1-8d8660524fd5.PNG)
+
